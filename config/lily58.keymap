@@ -17,7 +17,7 @@ bindings = <
 &kp TAB      &kp SQT     &kp COMMA   &kp DOT     &kp P       &kp Y                        &kp F       &kp G       &kp C       &kp R       &kp L       &kp LBKT
 &kp LSHIFT   &kp A       &kp O       &kp E       &kp U       &kp I                        &kp D       &kp H       &kp T       &kp N       &kp S       &kp SQT
 &kp LCTRL    &kp SEMI    &kp Q       &kp J       &kp K       &kp X    &kp LBKT  &kp RBKT  &kp B       &kp M       &kp W       &kp V       &kp Z       &kp RSHIFT
-                           &kp LALT &kp LGUI &mo 1 &kp SPACE                 &kp RET &mo 1 &kp BACKSPACE &mo 2
+                           &kp LALT &kp LGUI &mo 1 &kp SPACE                 &kp RET &mo 1 &kp BACKSPACE &kp RALT
 >;
         };
 
@@ -27,9 +27,9 @@ bindings = <
         lower_layer {
             bindings = <
 &kp F1     &kp F2     &kp F3    &kp F4    &kp F5     &kp F6                         &kp F7     &kp F8    &kp F9  &kp F10  &kp F11  &kp F12
-&trans     &kp HOME   &trans    &kp UP    &trans    &trans                        &kp LBKT   &kp RBKT  &kp N1  &kp N2   &kp N3   &trans
-&kp PG_UP  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans                         &kp LBRC  &kp RBRC  &kp N4  &kp N5   &kp N6   &trans
-&kp DEL    &kp END    &trans    &trans    &trans     &trans   &kp GRAVE    &trans  &kp MINUS   &kp STAR    &kp N7  &kp N8   &kp N9   &trans
+&kp CAPS   &kp DEL   &trans    &kp UP    &trans    &trans                          &kp EQUAL  &kp RET  &kp N1  &kp N2   &kp N3   &trans
+&kp HOME   &kp END  &kp LEFT  &kp DOWN  &kp RIGHT  &trans                         &kp PLUS   &kp MINUS  &kp N4  &kp N5   &kp N6   &trans
+&kp PG_DN  &kp PG_UP    &trans    &trans    &trans     &trans   &kp GRAVE    &kp BSLH  &kp STAR   &kp FSLH    &kp N7  &kp N8   &kp N9   &trans
                                 &trans    &trans     &trans    &trans       &trans  &trans     &kp DEL   &kp N0
             >;
         };
@@ -57,35 +57,6 @@ bindings = <
 &trans       &trans       &trans       &trans       &trans       &trans           &trans       &trans       &trans   &trans   &trans   &trans
 &trans       &trans       &trans       &trans       &trans       &trans &trans &trans &trans   &trans       &trans   &trans   &trans   &trans
                            &trans &trans &trans &trans &trans &trans &trans &trans
-            >;
-        };
-    };
-};
-
-#include <behaviors.dtsi>
-#include <dt-bindings/zmk/keys.h>
-
-/ {
-    keymap {
-        compatible = "zmk,keymap";
-
-        layer_0 {
-            bindings = <
-&kp ESC  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
-&kp TAB  &kp Q   &kp W   &kp W   &kp R   &kp T                     &kp Y   &kp U   &kp I   &kp R   &kp L   &trans
-&trans   &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                         &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans
-            >;
-        };
-
-        layer_1 {
-            bindings = <
-&kp F1     &kp F2     &kp F3    &kp F4    &kp F5     &kp F6                         &kp F7     &kp F8    &kp F9  &kp F10  &kp F11  &kp F12
-&trans     &kp HOME   &trans    &kp UP    &kp SQT    &kp SQT                        &kp LBKT   &kp RBKT  &kp N1  &kp N2   &kp N3   &trans
-&kp PG_UP  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans                         &kp MINUS  &kp STAR  &kp N4  &kp N5   &kp N6   &trans
-&kp DEL    &kp END    &trans    &trans    &trans     &kp LBRC  &kp GRAVE    &trans  &kp FSLH   &trans    &kp N7  &kp N8   &kp N9   &trans
-                                &trans    &trans     &trans    &trans       &trans  &trans     &kp DEL   &kp N0
             >;
         };
     };
