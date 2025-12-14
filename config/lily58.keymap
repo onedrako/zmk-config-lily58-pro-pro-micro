@@ -17,7 +17,7 @@ bindings = <
 &kp TAB      &kp SQT     &kp COMMA   &kp DOT     &kp P       &kp Y                        &kp F       &kp G       &kp C       &kp R       &kp L       &kp RGUI
 &kp LSHIFT   &kp A       &kp O       &kp E       &kp U       &kp I                        &kp D       &kp H       &kp T       &kp N       &kp S       &kp RSHFT
 &kp LCTRL    &kp SEMI    &kp Q       &kp J       &kp K       &kp X    &kp LBKT  &kp RBKT  &kp B       &kp M       &kp W       &kp V       &kp Z       &kp RCTRL
-                           &kp LALT &kp LGUI &mo 1 &kp SPACE                 &kp RET &mo 1 &kp BACKSPACE &kp RALT
+                           &kp LALT &kp LGUI &mo 1 &kp SPACE                 &kp RET &mo 1 &kp BACKSPACE &mo 3
 >;
         };
 
@@ -27,9 +27,9 @@ bindings = <
         lower_layer {
             bindings = <
 &kp F1     &kp F2     &kp F3    &kp F4    &kp F5     &kp F6                         &kp F7     &kp F8    &kp F9  &kp F10  &kp F11  &kp F12
-&kp CAPS   &kp DEL   &trans    &kp UP    &trans    &trans                          &kp EQUAL  &kp RET  &kp N1  &kp N2   &kp N3   &trans
-&kp HOME   &kp END  &kp LEFT  &kp DOWN  &kp RIGHT  &trans                         &kp PLUS   &kp MINUS  &kp N4  &kp N5   &kp N6   &trans
-&kp PG_DN  &kp PG_UP    &trans    &trans    &trans     &trans   &kp GRAVE    &kp BSLH  &kp STAR   &kp FSLH    &kp N7  &kp N8   &kp N9   &trans
+&trans   &kp DEL   &trans    &kp UP    &trans    &trans                          &kp EQUAL  &kp RET  &kp N1  &kp N2   &kp N3   &trans
+&trans   &kp END  &kp LEFT  &kp DOWN  &kp RIGHT  &trans                         &kp PLUS   &kp MINUS  &kp N4  &kp N5   &kp N6   &trans
+&trans   &kp PG_DN  &kp PG_UP    &kp HOME    &kp END     &trans &kp GRAVE    &kp BSLH  &kp STAR   &kp FSLH    &kp N7  &kp N8   &kp N9   &trans
                                 &trans    &trans     &trans    &trans       &trans  &trans     &kp DEL   &kp N0
             >;
         };
@@ -52,9 +52,9 @@ bindings = <
         // ----------------------------------------------------------------------
         master_layer {
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &out OUT_USB &out OUT_BLE &trans &trans &trans &bootloader
-&trans       &trans       &trans       &trans       &trans       &trans           &kp F13      &kp F14      &kp F15  &kp F16  &kp F17  &kp F18
-&trans       &trans       &trans       &trans       &trans       &trans           &trans       &trans       &trans   &trans   &trans   &trans
+&bt BT_CLR   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4     &kp F13      &kp F14      &kp F15  &kp F16  &kp F17  &kp F18
+&trans       &trans       &trans       &trans       &trans       &trans           &kp F13      &kp F14      &kp LC(C)  &kp LC(V)  &kp LC(X)   &kp LALT
+&trans       &trans       &trans       &trans       &trans       &trans           &trans       &trans       &trans   &kp LS(SLASH)   &trans   &trans
 &trans       &trans       &trans       &trans       &trans       &trans &trans &trans &trans   &trans       &trans   &trans   &trans   &trans
                            &trans &trans &trans &trans &trans &trans &trans &trans
             >;
