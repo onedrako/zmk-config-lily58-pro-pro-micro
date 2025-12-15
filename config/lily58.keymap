@@ -27,9 +27,9 @@ bindings = <
         lower_layer {
             bindings = <
 &kp F1     &kp F2     &kp F3    &kp F4    &kp F5     &kp F6                         &kp F7     &kp F8    &kp F9  &kp F10  &kp F11  &kp F12
-&kp CAPS   &kp LC(C)   &kp LC(V)    &kp UP    &kp LC(X)    &kp LS(SLASH)                          &kp EQUAL  &kp RET  &kp N1  &kp N2   &kp N3   &trans
-&trans   &kp LC(LS(Z))  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LG(LS(Z))                         &kp PLUS   &kp MINUS  &kp N4  &kp N5   &kp N6   &trans
-&trans   &kp LC(Z) &kp PG_DN  &kp PG_UP    &kp HOME   &kp END &kp GRAVE    &kp BSLH  &kp STAR   &kp FSLH    &kp N7  &kp N8   &kp N9   &trans
+&kp CAPS   &kp LC(C)   &kp LC(V)    &kp UP    &kp LC(X)    &kp LS(SLASH)                          &kp COMMA  &kp DOT  &kp N7  &kp N8   &kp N9   &trans
+&trans   &kp LC(LS(Z))  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LG(LS(Z))                         &kp EQUAL   &kp MINUS  &kp N4  &kp N5   &kp N6   &trans
+&trans   &kp LC(Z) &kp PG_DN  &kp PG_UP    &kp HOME   &kp END &kp GRAVE    &kp BSLH  &kp STAR   &kp FSLH    &kp N1  &kp N2   &kp N3   &trans
                                 &trans    &trans     &trans    &trans       &trans  &trans     &kp DEL   &kp N0
             >;
         };
